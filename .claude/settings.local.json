@@ -27,7 +27,12 @@
       "Bash(tasklist:*)",
       "Bash(/c/msys64/mingw64/bin/objdump.exe:*)",
       "Bash(cmd.exe //c \"cd /d C:\\users\\rob\\source\\004\\pse4\\shadps4-qtlauncher\\dist && start shadPS4QtLauncher.exe\")",
-      "Bash(cmd.exe //c \"cd /d C:\\users\\rob\\source\\004\\pse4\\shadps4-qtlauncher\\dist && start PSE4Launcher.exe\")"
+      "Bash(cmd.exe //c \"cd /d C:\\users\\rob\\source\\004\\pse4\\shadps4-qtlauncher\\dist && start PSE4Launcher.exe\")",
+      "Bash(cmd.exe //c \"start C:\\users\\rob\\source\\004\\pse4\\shadps4-qtlauncher\\dist\\launcher\\v0.12.5\\shadPS4.exe\")",
+      "Bash(nul)",
+      "Bash(timeout /t 2)",
+      "Bash(cmd.exe //c \"taskkill /F /IM PSE4Launcher.exe\")",
+      "Bash(cmd.exe //c \"taskkill /F /IM PSE4Launcher.exe\" 2)"
     ],
     "deny": [],
     "ask": []
